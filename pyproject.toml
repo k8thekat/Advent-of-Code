@@ -22,8 +22,10 @@ line-length = 140
 select = ["ALL"]
 ignore = [
     "ANN401",
+    "ANN201", # Return type missing.
     "D401", # Ignore "Imperative Mood" statement for docstrings.
     "D100", # Docstring at top of script
+    "D103", #Docstring on function.
     "ERA001", #Ignore commented out code.
     "FIX002", # Ignore TODO's telling you to "fix them".
     "F401",
@@ -37,6 +39,7 @@ ignore = [
     "RUF002", # The character U+2013 "–" could be confused with the ASCII character U+002d "-", which is more common in source code.
     "RUF009",
     "RUF052", # for filtering "local dummy variable is accessed" eg. - vars using `_`
+    "RET503", # Return needed
     "SIM105",
     "TD003", # Ignore TODO's not having a link/url to an issue.
     "T201", # Ignoring Prints.
